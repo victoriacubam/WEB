@@ -1,0 +1,86 @@
+body {
+    background-color: #fcf3e8;
+}
+
+.encabezado {
+    display: flex;
+    background-color: #EDDDC3;
+    height: 124px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase; 
+    color: #645d52;
+    padding: 10px;
+}
+
+.item:hover {
+    background: #C3BAA9;
+}
+.navegacion {
+    padding: 0px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentacion {
+    background-color: #C3BAA9;
+    margin: 70px;
+    padding: 50px;
+    width: 788px;
+    height: 590px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mates {
+    width: 30%;
+    margin: 10px;
+}
+
+.tipsMates {
+    background-color: #E7ECCC;
+    margin: 70px;
+    width: 400px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #645d52;
+}
+
+#tips {
+    background-color: #2F6243;
+    color: #EDDDC3;
+    padding: 10px;
+}
+.prepararMate {
+    width: 80%;
+    margin: 25px;
+}
+
+.pie {
+    display: flex;
+    background-color: #EDDDC3;
+    height: 78px;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contacto {
+    width: 80%;
+    height: 78px;
+    list-style: none;
+}
+
+.instagram {
+    list-style-image: url(images/logo.jpg);
+}
