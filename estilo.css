@@ -1,52 +1,42 @@
-body {
+html,body {
     background-color: #fcf3e8;
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
+    height: 100%;
 }
 
-/*Caja con logo + barra de navegacion*/
 .encabezado {
     display: flex;
     background-color: #EDDDC3;
     height: 124px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
 }
 
-#logo {
-    padding-left: 10px;
-    width: 80%;
-}
-
-/*Barra de navegacion*/
 .item {
     text-decoration: none;
     list-style: none;
     text-transform: uppercase; 
     color: #645d52;
     padding: 10px;
+
 }
 
-/*Cambia de color cuando pasa el pulsor por encima*/
 .item:hover {
     background: #C3BAA9;
 }
 
-/*Lista de nav*/
 .navegacion {
     padding: 0px;
-    list-style: none;
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
- /*Contenido: Presentacion + tips mates*/
-.contenedorIndex {
+
+.contenedor {
     display: flex;
     justify-content: space-between;
 }
-/*Texto presentacion*/
+
 .presentacion {
     background-color: #C3BAA9;
     margin: 70px;
@@ -56,14 +46,12 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-/*Imagenes mates*/
+
 .mates {
     width: 30%;
-    padding: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 10px;
 }
-/*Como preparar un buen mate*/
+
 .tipsMates {
     background-color: #E7ECCC;
     margin: 70px;
@@ -73,24 +61,20 @@ body {
     color: #645d52;
 }
 
-img.tipsImagen {
-    width: 350px;
-}
-
-.tipsTitulo {
+#tips {
     background-color: #2F6243;
     color: #EDDDC3;
     padding: 10px;
 }
-
-.tipsImagen {
+.prepararMate {
     width: 80%;
     margin: 25px;
 }
 
-/*Pie de pagina*/
 .pie {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #EDDDC3;
     height: 78px;
     list-style: none;
@@ -98,61 +82,42 @@ img.tipsImagen {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: flex-end;
-    justify-content: space-between;
-
 }
-/*Pie que contiente las redes y el contacto*/
+
 .pieIzquierdo {
     display: flex;
     flex-direction: row;
     width: 70%;
-    height: 78px;
 }
 
-/*Seccion de contacto*/
-.columna1 {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    margin: 10px;
-    text-transform: uppercase;
-}
-
-.columna2 {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    margin: 5px;
-    align-items: center;
-}
-
-.columna3 {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    margin: 5px;
-    align-items: center;
-}
-
-/*Logos de seccion de contacto*/
-.redesSociales {
-    width: 30px;
-    margin: 5px;
-}
-
-/*Seccion copyright*/
 .pieDerecho {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+
+
 }
 
-.copyright {
-    margin: 5px;
-    font-size: 10px;
+.contacto {
+    width: 80%;
+    height: 78px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+.instagram {
+    list-style-image: url(images/logo.jpg);
+    padding: 5px;
+}
+.whatsapp {
+    padding: 5px;
+}
+
 
 /*productos */
+
+
+
 
 .tituloGeneralProductos {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -185,7 +150,7 @@ img.tipsImagen {
     width: 50%; 
 }
 
-.imagenTradicional { /* Aca al ser el mismo tamaño de imagenes podriamos agruparlos con una sola clase*/
+.imagenTradicional {
     height: 285px;
     width: 249px;
 }
@@ -215,21 +180,3 @@ img.tipsImagen {
    
 }
 
-.contenedorContacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 700px;
-}
-
-.contactoIzquierda {
-  width: 50%;
-  padding: 100px;
-}
-
-.contactoDerecha {
-    width: 50%;
-    padding: 100px;
-}
-
- 
