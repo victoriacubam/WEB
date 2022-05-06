@@ -2,6 +2,7 @@ body {
     background-color: #fcf3e8;
 }
 
+/*Caja con logo + barra de navegacion*/
 .encabezado {
     display: flex;
     background-color: #EDDDC3;
@@ -11,6 +12,7 @@ body {
     align-items: center;
 }
 
+/*Barra de navegacion*/
 .item {
     text-decoration: none;
     list-style: none;
@@ -22,10 +24,14 @@ body {
 .item:hover {
     background: #C3BAA9;
 }
+
 .navegacion {
     padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
-
+ /*Contenido: Presentacion + tips mates*/
 .contenedor {
     display: flex;
     justify-content: space-between;
@@ -65,6 +71,7 @@ body {
     margin: 25px;
 }
 
+/*Pie de pagina*/
 .pie {
     display: flex;
     background-color: #EDDDC3;
@@ -73,14 +80,62 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: flex-end;
+    justify-content: space-between;
+
 }
 
-.contacto {
-    width: 80%;
+.pieIzquierdo {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
     height: 78px;
-    list-style: none;
+}
+
+/*Seccion de contacto*/
+.columna1 {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.columna2 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+}
+
+.columna3 {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 5px;
+    align-items: center;
+}
+
+/*Logos de seccion de contacto*/
+.whatsapp {
+    width: 30px;
+    margin: 5px;
 }
 
 .instagram {
-    list-style-image: url(images/logo.jpg);
+    width: 30px;
+    margin: 5px;
+}
+
+/*Seccion copyright*/
+.pieDerecho {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.copyright {
+    margin: 5px;
+    font-size: 10px;
 }
